@@ -12,8 +12,19 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
+const mongoose = require("mongoose");
+const mongoURL = process.env.PROD_MONGODB || "mongodb://localhost:27017/googlebooks"
+  mongoose.connect(mongoURL, {useNewUrlParser: true})
+  .then(() => {
+    console.log("🗄 ==> Successfully connected to mongoDB.");
+  })
+  .catch((err) => {
+    console.log(`Error connecting to mongoDB: ${err}`);
+  });
 
 // Send every other request to the React app
+require("./routes/api-routes")(app);
+
 // Define any API routes before this runs
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
