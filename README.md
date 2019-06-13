@@ -1,29 +1,39 @@
-# Create React Express App
+# React App with Google Books API
 
-## About This Boilerplate
+Search Google Books and save book titles to a list.
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Contributors
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+@boogeybum
 
-## Starting the app locally
+## Technology
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+- React, Bootstrap, HTML5, CSS, JavaScript, MongoDb, Mongoose, Axios, Express, Node
+- Live demo: 
 
-```
-npm install
-```
+## About
 
-This should install node modules within the server and the client folder.
+- Usilizing the MERN stack (MongoDB, Express.js, React.js and Node.js) search books on Google Books then save to a list.
+- Deleting a record removes the book from the list.
 
-After both installations complete, run the following command in your terminal:
+## License
 
-```
-npm start
-```
+- No license explicite or implied.
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+## How-to use this code
 
-## Deployment (Heroku)
+- In a web browser, enter the title of a book in the search field and press submit. From the returned results, click 'save' to add the book to the list. Clicking on the 'saved' link in the nav bar shows all books that have been saved to the list. Any books that are no longer needed on the list can be removed by clicking the delete button associated with the book to be removed. Clicking the 'view' button takes you to the associated Google link for the book.
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+## Contributing Guidelines
+
+All contributions and suggestions are welcome!
+For direct contributions, please fork the repository and file a pull request.
+
+## Contact
+
+#### Developer/Full-stack Web Software Developer (in training)
+
+- Homepage: https://boogeybum.github.io/Bootstrap-Portfolio/
+- e-mail: cseastrand@gmail.com
+- Twitter: @cseastrand
+- LinkedIn: https://www.linkedin.com/in/clayton-seastrand-43a76861/
