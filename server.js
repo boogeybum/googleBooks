@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 // Define API routes here
 const mongoose = require('mongoose');
 const mongoURL =
-  process.env.PROD_MONGODB || 'mongodb://localhost:27017/googlebooks';
+  process.env.PROD_MONGODB || 'mongodb://fishfry:g44bJRvuc3q7zy7@ds153096.mlab.com:53096/heroku_86vq5pqd';
 mongoose
   .connect(mongoURL, { useNewUrlParser: true })
   .then(() => {
